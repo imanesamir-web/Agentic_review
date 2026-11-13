@@ -1,0 +1,6 @@
+.env
+.venv/
+__pycache__/
+runs/*
+!runs/.gitkeep
+critic_edited_backup.py

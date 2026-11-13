@@ -1,0 +1,22 @@
+# PRISMA 2020-aligned review protocol template.
+# The Planner agent fills empty fields from the research question; you can edit before running.
+title: ""
+research_question: ""
+pico:
+  population: ""
+  intervention: ""
+  comparator: ""
+  outcomes: ""
+study_design: []
+inclusion_criteria: []
+exclusion_criteria: []
+databases: [pubmed, openalex]
+date_range: {from: 2015, to: 2026}
+languages: [en]
+max_records_per_database: 50
+screening:
+  mode: dual            # two independent screeners + arbiter
+  min_agreement_kappa: 0.6
+extraction_fields: [study_design, dataset, sample_size, method, metrics, main_findings, limitations]
+risk_of_bias_tool: "adapted QUADAS-2 / custom checklist"
+human_in_the_loop: [protocol_approval]
